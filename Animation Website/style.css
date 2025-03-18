@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#animation-container {
+    margin-top: 30px;
+    min-height: 200px;
+    border: 2px dashed #666;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Custom Animation for Demo */
+@keyframes rock-dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animate-rock {
+    animation: rock-dance 1s infinite;
+}
